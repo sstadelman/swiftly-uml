@@ -1,21 +1,10 @@
 define(function (require, exports, module) {
     "use strict";
 
-    var workspaceRoot = "/Users/i826181/sapgithub/healthcaresdk/Foundation/";
+    var workspaceRoot = "/Users/i826181/tango/fioriuikit/src/Frameworks/SAPFiori";
     
     var xcworkspace = {
-        "DBSchemaManager": workspaceRoot + "DBSchemaManager/DBSchemaManager.xcodeproj",
-        "HttpClient" : workspaceRoot + "HttpClient/HttpClient.xcodeproj",
-        "OData" : workspaceRoot + "OData/OData.xcodeproj",
-        "OAuth" : workspaceRoot + "OAuth/OAuth.xcodeproj",
-        "ODataStore" : workspaceRoot + "ODataStore/ODataStore.xcodeproj",
-        "ODataCommunication" : workspaceRoot + "ODataCommunication/ODataCommunication.xcodeproj",
-        "SecureStorage" : workspaceRoot + "SecureStorage/SecureStorage.xcodeproj",
-        "Logging" : workspaceRoot + "Logging/Logging.xcodeproj",
-        "BarcodeScanner" : workspaceRoot + "BarcodeScanner/BarcodeScanner.xcodeproj",
-        "OAuthHttpInterceptor" : workspaceRoot + "OAuthHttpInterceptor/OAuthHttpInterceptor.xcodeproj",
-        "UserActivation" : workspaceRoot + "UserActivation/UserActivation.xcodeproj",
-        "NetworkConnectivityCheck" : workspaceRoot + "NetworkConnectivityCheck/NetworkConnectivityCheck.xcodeproj"
+        "SAPFiori": workspaceRoot + "SAPFiori.xcodeproj"
     }
     
     var Commands       = app.getModule("command/Commands"),
@@ -259,17 +248,17 @@ define(function (require, exports, module) {
     
     // Handler for testing; not used in production
     function handleGetDirectoryContents() {
-        getProjectDirectoryContents('/Users/i826181/sapgithub/healthcaresdk/Foundation/ODataCommunication')
+        getProjectDirectoryContents('/Users/i826181/tango/fioriuikit/src/Frameworks/SAPFiori')
         .then(function(output) {
-            console.log('output: ' + output);
+            console.log('output: ' + JSON.stringify(output, null, 2));
         });
     }
     
     // Handler for testing; not used in production
     function handleGetParsedFile() {
-        parseSwiftFile('/Users/i826181/sapgithub/healthcaresdk/Foundation/ODataCommunication/ODataCommunication/Impl/DataRequestFactoryImpl.swift')
+        parseSwiftFile('/Users/i826181/tango/fioriuikit/src/Frameworks/SAPFiori/SAPFiori/GlyphImage/FUIGlyphImage.swift')
         .then(function(output) {
-            console.log('output: ' + output);
+            console.log('output: ' + JSON.stringify(output, null, 2));
         });
     }
 
