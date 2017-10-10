@@ -1,0 +1,28 @@
+{
+  "name": "sstadelman.swiftstaruml",
+  "title": "SwiftStarUML",
+  "description": "Extension to StarUML, which generates and maintains UML models for Swift framework projects.",
+  "homepage": "https://github.com/sstadelman",
+  "version": "0.1.0",
+  "keywords": [
+    "swift",
+    "uml",
+    "staruml"
+  ],
+  "author": {
+    "name": "Stan Stadelman",
+    "email": "sstadelman@gmail.com",
+    "url": "https://github.com/sstadelman"
+  },
+  "license": "MIT",
+  "engines": {
+    "staruml": ">=2.0.0",
+    "xcode": ">=0.8.4",
+    "child-process-promise": ">=2.0.0"
+  },
+  "dependencies": {
+    "child-process-promise": "^2.0.1",
+    "should": "^8.3.1",
+    "xcode": "^0.8.5"
+  }
+}
